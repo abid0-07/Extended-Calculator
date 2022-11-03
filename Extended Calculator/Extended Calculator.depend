@@ -1,0 +1,49 @@
+# depslib dependency file v1.0
+1665050292 source:f:\studies\semesters\semester 4\se 133 (software development capstone project)\project folder\extended calculator\main.c
+	<stdio.h>
+	<stdlib.h>
+	"allheaderfile.h"
+
+1665051102 f:\studies\semesters\semester 4\se 133 (software development capstone project)\project folder\extended calculator\allheaderfile.h
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"cgpa.h"
+	"areaCalculator.h"
+	"currencyConverter.h"
+	"electricityBill.h"
+	"massConverte.h"
+	"statCalculation.h"
+	"temperatureConverter.h"
+	"numberSystemConv.h"
+
+1663689315 f:\studies\semesters\semester 4\se 133 (software development capstone project)\project folder\extended calculator\cgpa.h
+	"allheaderfile.h"
+
+1665051045 f:\studies\semesters\semester 4\se 133 (software development capstone project)\project folder\extended calculator\areacalculator.h
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
+1664113484 f:\studies\semesters\semester 4\se 133 (software development capstone project)\project folder\extended calculator\currencyconverter.h
+	<stdio.h>
+
+1665050548 f:\studies\semesters\semester 4\se 133 (software development capstone project)\project folder\extended calculator\electricitybill.h
+	<stdio.h>
+	<stdlib.h>
+
+1663389093 f:\studies\semesters\semester 4\se 133 (software development capstone project)\project folder\extended calculator\massconverte.h
+	"allheaderfile.h"
+	<stdio.h>
+
+1663389366 f:\studies\semesters\semester 4\se 133 (software development capstone project)\project folder\extended calculator\statcalculation.h
+	"allheaderfile.h"
+	<stdio.h>
+
+1665051005 f:\studies\semesters\semester 4\se 133 (software development capstone project)\project folder\extended calculator\temperatureconverter.h
+	<stdio.h>
+
+1663389354 f:\studies\semesters\semester 4\se 133 (software development capstone project)\project folder\extended calculator\numbersystemconv.h
+	"allheaderfile.h"
+	<stdio.h>
+
