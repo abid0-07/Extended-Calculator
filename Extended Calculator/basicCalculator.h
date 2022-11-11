@@ -3,15 +3,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include "allheaderfile.h"
+
 
 void menuBasic()
 {
-    printdash();
+    printf("\t\t------------------------------------------------\n");
     printf("\t\tBasic Calculator Menu\n");
-    printdash();
+    printf("\t\t------------------------------------------------\n");
     printf("\t\t1. Addition\n\t\t2. Subtraction\n\t\t3. Multiplication\n\t\t4. Division\n\t\t5. Modulas\n\t\t6. Power Function\n\t\t7. Root Function\n");
-    printdash();
+    printf("\t\t------------------------------------------------\n");
 }
 
 void basicCal()

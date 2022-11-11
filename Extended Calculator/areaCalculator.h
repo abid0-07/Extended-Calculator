@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include "allheaderfile.h"
+
 #define pi 22 / 7
 
 void menu();
@@ -87,10 +87,10 @@ void areaCalculator()
 }
 void menu()
 {
-    printdash();
+    printf("\t\t------------------------------------------------\n");
     printf("\t\t\tArea Calculator\n");
     printf("\t\t1. Equilateral Triangle\n2. Isoceles Triangle\n3. Scalene Triangle\n4. Rectangle\n5. Square\n6. Trapizium\n7. Circle");
-    printdash();
+    printf("\t\t------------------------------------------------\n");
 }
 double equTri()
 {

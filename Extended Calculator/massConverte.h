@@ -1,7 +1,9 @@
 #ifndef MASSCONVERTE_H_INCLUDED
 #define MASSCONVERTE_H_INCLUDED
-#include "allheaderfile.h"
+
 #include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
 
 void kilogram(double x)
 {
@@ -47,9 +49,9 @@ void pound(double x)
 }
 void massCalculation()
 {
-    printdash();
+    printf("\t\t------------------------------------------------\n");
     printf("\t|\tMass Calculation Menu   |");
-    printdash();
+    printf("\t\t------------------------------------------------\n");
     printf("\t\t1. Kilogram\n\t\t2. Gram\n\t\t3. Miligram\n\t\t4. Pound\n");
     int choice;
     printf("Enter your choice: ");

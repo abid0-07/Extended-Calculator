@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void printrate();
+void printRate();
 void electricityBill()
 {
     double unit, result;
@@ -35,11 +35,11 @@ void electricityBill()
         result = 75.00 * 3.80 + 125.00 * 5.14 + 100.00 * 5.36 + 200.00 * 5.63 + 200.00 * 8.70 + (unit - 600.00) * 9.98;
     }
 
-    printrate();
+    printRate();
     printf("\nYour used UNIT: %.4lf\n", result);
     printf("Your bill is : %.4f\n", result);
 }
-void printrate()
+void printRate()
 {
     printf("\nFrom 000 to 075 units costs BTD 3.80\n");
     printf("\nFrom 076 to 200 units costs BTD 5.14\n");

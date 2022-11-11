@@ -3,13 +3,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include "allheaderfile.h"
+
 
 void lengthMenu()
 {
-    printdash();
+    printf("\t\t------------------------------------------------\n");
     printf("\t\t\tLength Menu\n");
-    printdash();
+    printf("\t\t------------------------------------------------\n");
     printf("\t\t1. Kilometer to others\n\t\t2. Meter to others\n\t\t3. Mile to others\n\t\t4. Foot to others\n");
 }
 void kilometer(float km)

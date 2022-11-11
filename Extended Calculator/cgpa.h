@@ -1,6 +1,6 @@
 #ifndef CGPA_H_INCLUDED
 #define CGPA_H_INCLUDED
-#include "allheaderfile.h"
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>

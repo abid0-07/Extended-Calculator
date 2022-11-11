@@ -7,11 +7,11 @@
 #include "areaConverter.h"
 void unitMenu()
 {
-    printdash();
+    printf("\t\t------------------------------------------------\n");
     printf("\t\t\tUnit Converter Menu\n");
-    printdash();
+    printf("\t\t------------------------------------------------\n");
     printf("\t\t1. Temperature Converter\n\t\t2. Mass Converter\n\t\t3. Area Converter\n\t\t4. Length Converter\n\t\t5. Area Calculation\n");
-    printdash();
+    printf("\t\t------------------------------------------------\n");
 }
 void unitConverter()
 {

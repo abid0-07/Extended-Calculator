@@ -3,11 +3,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include "allheaderfile.h"
+
 void menuArea()
 {
+    printf("\t\t------------------------------------------------\n");
     printf("\n\t\tArea Calculation Menu\n");
-    printdash();
+    printf("\t\t------------------------------------------------\n");
     printf("\t\t1. Square meter to others\n\t\t2. Square Centimeter to others\n\t\t3. Square feet to others\n\t\t4. Square kilometer to others\n");
 }
 void meterConverter()
