@@ -5,6 +5,7 @@
 #include "cgpa.h"
 #include "electricityBill.h"
 #include "unitConverter.h"
+#include "statCalculation.h"
 
 void mainMenu()
 {
@@ -56,6 +57,7 @@ int main()
         }
         case 6:
         {
+            statCalculation();
             printf("\n");
             break;
         }
