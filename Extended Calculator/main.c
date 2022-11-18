@@ -6,13 +6,14 @@
 #include "electricityBill.h"
 #include "unitConverter.h"
 #include "statCalculation.h"
+#include "matrixCalculator.h"
 
 void mainMenu()
 {
-    printf("\t\t------------------------------------------------\n");
+    printf("\n\t\t------------------------------------------------\n");
     printf("\t\t\t\tMain Menu\n");
     printf("\t\t------------------------------------------------\n");
-    printf("\t\t1. Basic Calculator\n\t\t2. Unit Converter\n\t\t3. CGPA Calculator\n\t\t4. Electricity Converter\n\t\t5. Equation Calculator\n\t\t6. Statistical Calculator\n");
+    printf("\t\t1. Basic Calculator\n\t\t2. Unit Converter\n\t\t3. CGPA Calculator\n\t\t4. Electricity Converter\n\t\t5. Matrix Calculator\n\t\t6. Statistical Calculator\n\t\t7. Exit Program\n");
     printf("\t\t------------------------------------------------\n");
 }
 
@@ -53,6 +54,7 @@ int main()
         case 5:
         {
             printf("\n");
+            matrixCalculator();
             break;
         }
         case 6:
@@ -64,7 +66,8 @@ int main()
         case 7:
         {
             printf("\n");
-            break;
+            printf("Exiting program\n");
+            exit(0);
         }
         default:
         {

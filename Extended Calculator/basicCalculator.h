@@ -7,19 +7,19 @@
 
 void menuBasic()
 {
-    printf("\t\t------------------------------------------------\n");
+    printf("\n\t\t------------------------------------------------\n");
     printf("\t\tBasic Calculator Menu\n");
     printf("\t\t------------------------------------------------\n");
-    printf("\t\t1. Addition\n\t\t2. Subtraction\n\t\t3. Multiplication\n\t\t4. Division\n\t\t5. Modulas\n\t\t6. Power Function\n\t\t7. Root Function\n");
+    printf("\t\t1. Addition\n\t\t2. Subtraction\n\t\t3. Multiplication\n\t\t4. Division\n\t\t5. Modulas\n\t\t6. Power Function\n\t\t7. Root Function\n\t\t8. Return to main menu\n");
     printf("\t\t------------------------------------------------\n");
 }
 
-void basicCal()
+int basicCalculator()
 {
     int choice;
     while (1)
     {
-        menuBasic;
+        menuBasic();
         printf("\nEnter your choice: ");
         scanf("%d", &choice);
         switch (choice)
@@ -80,6 +80,10 @@ void basicCal()
             printf("Sum is: %.4f", sqrt(a));
             break;
         }
+        case 8:
+            {
+                return;
+            }
         default:
             printf("Invalid choice!!!");
         }

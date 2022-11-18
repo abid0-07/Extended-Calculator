@@ -17,14 +17,14 @@ void printfun(struct s *s1, double cgpa)
 {
     printf("Printing to the console\n");
     printf("Subject Name\tCredit\tGPA\n");
-    printf("------------------------------");
+    printf("------------------------------\n");
     for (int i = 0; i < n; i++)
     {
         printf("%s\t", s1[i].subName);
         printf("%f\t", s1[i].credit);
         printf("%f\n", s1[i].gpa);
     }
-    printf("------------------------------");
+    printf("------------------------------\n");
     printf("Total credit = %f\n", totalcredit);
     printf("Total GPA = %f\n", cgpa);
 }
@@ -42,17 +42,18 @@ double totalgpa(struct s *s1)
     return cgpa;
 }
 
-void cgpa()
+int cgpa()
 {
     printf("Enter the number of subjects: ");
     scanf("%d", &n);
     struct s s1[n];
     for (int i = 0; i < n; i++)
     {
+        fflush(stdin);
         printf("Enter the name of the subject: ");
         gets(s1[i].subName);
         fflush(stdin);
-        printf("Enter the credit of the credit: ");
+        printf("\nEnter the credit of the credit: ");
         scanf("%f", &s1[i].credit);
         printf("Enter the gpa of the GPA: ");
         scanf("%f", &s1[i].gpa);
@@ -61,9 +62,8 @@ void cgpa()
     printfun(s1, cgpa);
 
     int choice;
-    printf("Do you want to save in a file? (y/n): ");
-    if (choice == 'y' || choice == 'Y')
-    {
+    printf("Printing into file:\n ");
+
         FILE *f = fopen("output.txt", "a+");
         fputs("\n", f);
         fputs("Subject Name\tCredit\tGPA\n", f);
@@ -73,12 +73,12 @@ void cgpa()
             fputs("\t", f);
             fprintf(f, "%f\t", s1[i].credit);
             fprintf(f, "%f\n", s1[i].gpa);
+            fprintf(f,"%f\n",cgpa);
+            printf("%d data printed into file\n", i+1);
         }
-    }
-    else
-    {
-        exit(0);
-    }
+
+        fclose(f);
+
 }
 
 #endif // CGPA_H_INCLUDED

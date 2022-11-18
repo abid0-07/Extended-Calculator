@@ -10,14 +10,14 @@ void unitMenu()
     printf("\t\t------------------------------------------------\n");
     printf("\t\t\tUnit Converter Menu\n");
     printf("\t\t------------------------------------------------\n");
-    printf("\t\t1. Temperature Converter\n\t\t2. Mass Converter\n\t\t3. Area Converter\n\t\t4. Length Converter\n\t\t5. Area Calculation\n");
+    printf("\t\t1. Temperature Converter\n\t\t2. Mass Converter\n\t\t3. Area Converter\n\t\t4. Length Converter\n\t\t5. Area Calculation\n\t\t6. Return to Main menu\n");
     printf("\t\t------------------------------------------------\n");
 }
 void unitConverter()
 {
     int choice;
-    int k = 1;
-    while (k)
+
+    while (1)
     {
         unitMenu();
         printf("\nEnter your choice: ");
@@ -49,13 +49,16 @@ void unitConverter()
             areaCalculator();
             break;
         }
+        case 6:
+        {
+            return;
+        }
         default:
         {
             printf("Invalid choice!!!!\n");
         }
         }
-        printf("Do yo wish to continue?\nIf yes, please enter 1 otherwise 0!!\n");
-        scanf("%d", &k);
+
     }
 }
 #endif // UNITCONVERTER_H_INCLUDED

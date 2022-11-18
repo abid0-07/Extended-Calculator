@@ -11,7 +11,7 @@ double equTri();
 double isoTri();
 double scaTri();
 
-void areaCalculator()
+int areaCalculator()
 {
     int choice;
     while (1)
@@ -80,6 +80,10 @@ void areaCalculator()
             printf("%.4lf is the radius of the Circle\n", result);
             break;
         }
+        case 8:
+            {
+                return;
+            }
         default:
             printf("\nEnter valid choice between 1 to 7\n");
         }
@@ -87,15 +91,18 @@ void areaCalculator()
 }
 void menu()
 {
-    printf("\t\t------------------------------------------------\n");
+    printf("\n\t\t------------------------------------------------\n");
     printf("\t\t\tArea Calculator\n");
-    printf("\t\t1. Equilateral Triangle\n2. Isoceles Triangle\n3. Scalene Triangle\n4. Rectangle\n5. Square\n6. Trapizium\n7. Circle");
+    printf("\t\t------------------------------------------------\n");
+    printf("\t\t1. Equilateral Triangle\n\t\t2. Isoceles Triangle\n\t\t3. Scalene Triangle\n\t\t4. Rectangle\n\t\t5. Square\n\t\t6. Trapizium\n\t\t7. Circle\n\t\t8. Return to unit menu\n");
     printf("\t\t------------------------------------------------\n");
 }
 double equTri()
 {
-    printf("Enter the value of arm: ");
     double a, result;
+    printf("Enter the value of arm: ");
+    scanf("%lf",&a);
+
     result = (sqrt(3) / 4) * pow(a, 2);
     return result;
 }

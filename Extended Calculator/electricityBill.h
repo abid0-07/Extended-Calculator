@@ -36,7 +36,7 @@ void electricityBill()
     }
 
     printRate();
-    printf("\nYour used UNIT: %.4lf\n", result);
+    printf("\nYour used UNIT: %.4lf\n", unit);
     printf("Your bill is : %.4f\n", result);
 }
 void printRate()

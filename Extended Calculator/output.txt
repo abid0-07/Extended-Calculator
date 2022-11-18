@@ -1,0 +1,5 @@
+
+Subject Name	Credit	GPA
+bangla	3.000000	3.000000
+english	3.000000	3.000000
+math	3.000000	3.000000

@@ -59,6 +59,9 @@
 		<Unit filename="massConverte.h">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
+		<Unit filename="matrixCalculator.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="numberSystemConv.h">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
