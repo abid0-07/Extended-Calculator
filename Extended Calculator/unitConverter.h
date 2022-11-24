@@ -22,6 +22,7 @@ void unitConverter()
         unitMenu();
         printf("\nEnter your choice: ");
         scanf("%d", &choice);
+        system("cls");
         switch (choice)
         {
         case 1:
@@ -58,7 +59,6 @@ void unitConverter()
             printf("Invalid choice!!!!\n");
         }
         }
-
     }
 }
 #endif // UNITCONVERTER_H_INCLUDED

@@ -6,7 +6,7 @@
 void menuTemperature()
 {
     printf("\n\t\t------------------------------------------------\n");
-    printf("\t|\tTemparature Converter Menu |\n");
+    printf("\t\t|\tTemparature Converter Menu \t\t|\n");
     printf("\t\t------------------------------------------------\n");
     printf("\t\t1. Kelvin Scale to others\n\t\t2. Celcius Scale to others\n\t\t3. Farenheit Scale to others\n\t\t4. Return to unit menu\n");
     printf("\t\t------------------------------------------------\n");

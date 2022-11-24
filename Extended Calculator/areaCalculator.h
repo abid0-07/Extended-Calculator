@@ -81,9 +81,9 @@ int areaCalculator()
             break;
         }
         case 8:
-            {
-                return;
-            }
+        {
+            return 1;
+        }
         default:
             printf("\nEnter valid choice between 1 to 7\n");
         }
@@ -101,7 +101,7 @@ double equTri()
 {
     double a, result;
     printf("Enter the value of arm: ");
-    scanf("%lf",&a);
+    scanf("%lf", &a);
 
     result = (sqrt(3) / 4) * pow(a, 2);
     return result;

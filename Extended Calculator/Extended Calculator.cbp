@@ -31,9 +31,6 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="allheaderfile.h">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
 		<Unit filename="areaCalculator.h">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
@@ -48,9 +45,6 @@
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
 		<Unit filename="electricityBill.h">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
-		<Unit filename="equationCalculation.h">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
 		<Unit filename="main.c">

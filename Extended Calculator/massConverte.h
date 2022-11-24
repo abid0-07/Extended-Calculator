@@ -50,9 +50,10 @@ void pound(double x)
 void massCalculation()
 {
     printf("\t\t------------------------------------------------\n");
-    printf("\t|\tMass Calculation Menu   |");
+    printf("\t\t|\tMass Converter Menu\t\t|\n");
     printf("\t\t------------------------------------------------\n");
-    printf("\t\t1. Kilogram\n\t\t2. Gram\n\t\t3. Miligram\n\t\t4. Pound\n");
+    printf("\t\t1. Kilogram\n\t\t2. Gram\n\t\t3. Miligram\n\t\t4. Pound\n\t\t5. Exit to main menu\n");
+    printf("\t\t------------------------------------------------\n");
     int choice;
     printf("Enter your choice: ");
     scanf("%d", &choice);
@@ -64,6 +65,7 @@ void massCalculation()
         printf("Enter the value in Kilogram (KG): ");
         scanf("%lf", &a);
         kilogram(a);
+        printf("\n");
         break;
     }
     case 2:
@@ -72,6 +74,7 @@ void massCalculation()
         printf("Enter the value in gram (G): ");
         scanf("%lf", &a);
         gram(a);
+        printf("\n");
         break;
     }
     case 3:
@@ -81,6 +84,7 @@ void massCalculation()
         printf("Enter the value in miligram (mg): ");
         scanf("%lf", &a);
         miligram(a);
+        printf("\n");
         break;
     }
     case 4:
@@ -89,11 +93,20 @@ void massCalculation()
         printf("Enter the value in pound (lb): ");
         scanf("%lf", &a);
         pound(a);
+        printf("\n");
+        break;
+    }
+    case 5:
+    {
+        printf("\n");
+        return;
         break;
     }
     default:
     {
         printf("Invalid choice! Please, choose (1/2/3/4)");
+        printf("\n");
+        break;
     }
     }
 }

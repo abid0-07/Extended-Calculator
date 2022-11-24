@@ -131,6 +131,8 @@ int statCalculation()
     while (1)
     {
         printf("\t\t------------------------------------------------\n");
+        printf("\t\t\tStatistic Calculation\n");
+        printf("\t\t------------------------------------------------\n");
         printf("\t\t1. Mean calculation\n\t\t2. Median calculation\n\t\t3. Mode calculation\n\t\t4. Exit Programme to main menu\n");
         printf("\t\t------------------------------------------------\n");
 
@@ -158,7 +160,7 @@ int statCalculation()
         }
         case 4:
         {
-            return;
+            return 1;
             printf("\n");
             break;
         }

@@ -7,9 +7,10 @@
 void menuArea()
 {
     printf("\t\t------------------------------------------------\n");
-    printf("\n\t\tArea Calculation Menu\n");
+    printf("\t\tArea Calculation Menu\n");
     printf("\t\t------------------------------------------------\n");
-    printf("\t\t1. Square meter to others\n\t\t2. Square Centimeter to others\n\t\t3. Square feet to others\n\t\t4. Square kilometer to others\n");
+    printf("\t\t1. Square meter to others\n\t\t2. Square Centimeter to others\n\t\t3. Square feet to others\n\t\t4. Square kilometer to others\n\t\t5. Exit to main menu\n");
+    printf("\t\t------------------------------------------------\n");
 }
 void meterConverter()
 {
@@ -61,13 +62,14 @@ void kmConverter()
     printf("Result in Centimeter Square: %.4lf\n", centimeter);
 }
 
-void areaConverter()
+int areaConverter()
 {
     int choice;
     while (1)
     {
         menuArea();
         printf("Enter choice: ");
+        scanf("%d", &choice);
         switch (choice)
         {
         case 1:
@@ -89,6 +91,11 @@ void areaConverter()
         {
             kmConverter();
             break;
+        }
+        case 5:
+        {
+            printf("\n");
+            return;
         }
 
         default:

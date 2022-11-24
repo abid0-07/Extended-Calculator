@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <conio.h>
 
 #include "basicCalculator.h"
 #include "cgpa.h"
@@ -7,13 +8,14 @@
 #include "unitConverter.h"
 #include "statCalculation.h"
 #include "matrixCalculator.h"
+#include "numberSystemConv.h"
 
 void mainMenu()
 {
     printf("\n\t\t------------------------------------------------\n");
     printf("\t\t\t\tMain Menu\n");
     printf("\t\t------------------------------------------------\n");
-    printf("\t\t1. Basic Calculator\n\t\t2. Unit Converter\n\t\t3. CGPA Calculator\n\t\t4. Electricity Converter\n\t\t5. Matrix Calculator\n\t\t6. Statistical Calculator\n\t\t7. Exit Program\n");
+    printf("\t\t1. Basic Calculator\n\t\t2. Unit Converter\n\t\t3. CGPA Calculator\n\t\t4. Electricity Converter\n\t\t5. Matrix Calculator\n\t\t6. Statistical Calculator\n\t\t7. Number System Converter\n\t\t8. Exit Program\n");
     printf("\t\t------------------------------------------------\n");
 }
 
@@ -25,6 +27,7 @@ int main()
         mainMenu();
         printf("Enter the choice: ");
         scanf("%d", &choice);
+        system("cls");
         switch (choice)
         {
         case 1:
@@ -59,11 +62,17 @@ int main()
         }
         case 6:
         {
-            statCalculation();
             printf("\n");
+            statCalculation();
             break;
         }
         case 7:
+        {
+            printf("\n");
+            numberSystemConverter();
+            break;
+        }
+        case 8:
         {
             printf("\n");
             printf("Exiting program\n");
@@ -75,8 +84,7 @@ int main()
             break;
         }
         }
-        printf("\n");
-        printf("\n");
+        
     }
     return 0;
 }

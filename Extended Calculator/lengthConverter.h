@@ -4,13 +4,13 @@
 #include <stdlib.h>
 #include <math.h>
 
-
 void lengthMenu()
 {
     printf("\t\t------------------------------------------------\n");
     printf("\t\t\tLength Menu\n");
     printf("\t\t------------------------------------------------\n");
-    printf("\t\t1. Kilometer to others\n\t\t2. Meter to others\n\t\t3. Mile to others\n\t\t4. Foot to others\n");
+    printf("\t\t1. Kilometer to others\n\t\t2. Meter to others\n\t\t3. Mile to others\n\t\t4. Foot to others\n\t\t5. Exit to main menu\n");
+    printf("\t\t------------------------------------------------\n");
 }
 void kilometer(float km)
 {
@@ -53,7 +53,7 @@ void foot(float f)
     printf("result in mile: %.4f\n", ml);
     printf("result in meter: %.4f\n", m);
 }
-void length()
+int length()
 {
     int choice;
     while (1)
@@ -93,6 +93,12 @@ void length()
             printf("Enter value in foot: ");
             scanf("%f", &f);
             foot(f);
+            break;
+        }
+        case 5:
+        {
+            printf("\n");
+            return;
             break;
         }
         default:

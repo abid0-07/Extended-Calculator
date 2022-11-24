@@ -82,7 +82,8 @@ int basicCalculator()
         }
         case 8:
             {
-                return;
+                printf("Returning to main menu");
+                return 1;
             }
         default:
             printf("Invalid choice!!!");

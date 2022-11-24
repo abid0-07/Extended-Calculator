@@ -8,7 +8,7 @@ void printMatrix(int array[10][10], int rows, int columns);
 void matrixAddSub(int matrixA[10][10], int matrixB[10][10], int rows, int columns, int mul);
 void matrixScalarMultiply(int array[10][10], int scalar, int rows, int columns);
 void matrixMultiply(int matrixA[10][10], int matrixB[10][10], int rowsA, int columnsA, int columnsB);
-void matrixCalculator()
+int matrixCalculator()
 {
 
     int i, j, k; // used in for loops
@@ -25,13 +25,15 @@ void matrixCalculator()
 
     while (again == 'Y' || again == 'y')
     {
-
-        // this is the operation menu just type A, B, C or D to calculate
-        printf("\nOperation Menu\n");
-        printf("\t1. to Add\n");
-        printf("\t2. to Subtract\n");
-        printf("\t3. to Scalar Multiply\n");
-        printf("\t4. to Multiply two matrices\n");
+        printf("\t\t------------------------------------------------\n");
+        printf("\t\t\tMatrix Calculator\n");
+        printf("\t\t------------------------------------------------\n");
+        printf("\t\t1. Add two matrixes\n");
+        printf("\t\t2. Subtract two matrixes\n");
+        printf("\t\t3. Scalar Multiply to a matrix\n");
+        printf("\t\t4. Multiply two matrices\n");
+        printf("\t\t5. Return to main menu\n");
+        printf("\t\t------------------------------------------------\n");
         printf("Enter your choice: ");
         scanf(" %d", &operation);
 
@@ -39,12 +41,7 @@ void matrixCalculator()
         {
 
         case 1:
-            /*printf("\nEnter the #rows and #cols for matrix A: ");
-             scanf("%d%d", &rowA, &colA);
-
-             printf("Enter the #rows and #cols for matrix B: ");
-             scanf("%d%d", &rowB, &colB);*/
-
+        {
             while ((rowA != rowB) && (colA != colB))
             {
                 printf("\nMatrices must be the same size\n");
@@ -69,9 +66,11 @@ void matrixCalculator()
             matrixAddSub(matrixA, matrixB, rowA, colA, add);
 
             break;
+        }
 
         case 2:
 
+        {
             printf("\nEnter the #rows and #cols for matrix A: ");
             scanf("%d%d", &rowA, &colA);
 
@@ -101,9 +100,11 @@ void matrixCalculator()
             printf("\nThe difference between matrixA - matrixB is : \n");
             matrixAddSub(matrixA, matrixB, rowA, colA, sub);
             break;
+        }
 
         case 3:
 
+        {
             printf("\nEnter the scalar: ");
             scanf("%d", &scalar);
             printf("\nThe scalar is: %d ", scalar);
@@ -120,9 +121,10 @@ void matrixCalculator()
             matrixScalarMultiply(matrixA, scalar, rowA, colA);
 
             break;
+        }
 
         case 4:
-            // when multiplying arrays matrixA column # has to equal matrixB row #
+        { // when multiplying arrays matrixA column # has to equal matrixB row #
             printf("\nEnter the #rows and #cols for matrix A: ");
             scanf("%d%d", &rowA, &colA);
 
@@ -156,7 +158,12 @@ void matrixCalculator()
             matrixMultiply(matrixA, matrixB, rowA, colA, colB);
 
             break;
-
+        }
+        case 5:
+        {
+            printf("Returning Main menu...\n");
+            return 1;
+        }
         default:
             printf("\nIncorrect option! Please choose a number 1-4.");
             break;
@@ -165,9 +172,6 @@ void matrixCalculator()
         printf("\n\nDo you want to calculate again? Y/N\n");
         scanf(" %c", &again);
     }
-    printf("\n\nGoodbye!\n\n");
-
-    return 0;
 }
 
 // User Defined Function Definition
