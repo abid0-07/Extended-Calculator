@@ -42,15 +42,15 @@ int matrixCalculator()
 
         case 1:
         {
-            while ((rowA != rowB) && (colA != colB))
-            {
+
                 printf("\nMatrices must be the same size\n");
                 printf("\nEnter the #rows and #cols for matrix A: ");
                 scanf("%d%d", &rowA, &colA);
 
                 printf("Enter the #rows and #cols for matrix B: ");
                 scanf("%d%d", &rowB, &colB);
-            }
+            if(rowA == rowB && colA== colB)
+            {
 
             printf("\n\tEnter elements of Matrix A a %d x %d matrix.\n", rowA, colA); // with the %d we remember the user the dimensions of the array
             readMatrix(matrixA, rowA, colA);
@@ -62,8 +62,13 @@ int matrixCalculator()
             printf("\n\t\tMatrix B\n\n");
             printMatrix(matrixB, rowB, colB);
 
-            printf("\nThe Sum of matrixA + matrixB is : \n");
+                printf("\nThe Sum of matrixA + matrixB is : \n");
             matrixAddSub(matrixA, matrixB, rowA, colA, add);
+            }
+            else{
+                printf("Dimension of the matrices is not equal. So, addition not possible!");
+
+            }
 
             break;
         }
@@ -77,15 +82,8 @@ int matrixCalculator()
             printf("Enter the #rows and #cols for matrix B: ");
             scanf("%d%d", &rowB, &colB);
 
-            while ((rowA != rowB) && (colA != colB))
-            {
-                printf("\nMatrices must be the same size\n");
-                printf("\nEnter the #rows and #cols for matrix A: ");
-                scanf("%d%d", &rowA, &colA);
 
-                printf("Enter the #rows and #cols for matrix B: ");
-                scanf("%d%d", &rowB, &colB);
-            }
+            if(rowA == rowB && colA== colB){
 
             printf("\n\tEnter elements of Matrix A a %d x %d matrix.\n", rowA, colA); // with the %d we remember the user the dimensions of the array
             readMatrix(matrixA, rowA, colA);
@@ -99,6 +97,11 @@ int matrixCalculator()
 
             printf("\nThe difference between matrixA - matrixB is : \n");
             matrixAddSub(matrixA, matrixB, rowA, colA, sub);
+        }
+        else
+        {
+            printf("Dimension of the matrices is not equal. So, addition not possible!");
+        }
             break;
         }
 
@@ -154,7 +157,7 @@ int matrixCalculator()
             printf("\n\t\tMatrix A\n\n");
             printMatrix(matrixB, rowB, colB);
 
-            // multiplyng arrays
+            // multiplying arrays
             matrixMultiply(matrixA, matrixB, rowA, colA, colB);
 
             break;
@@ -162,7 +165,7 @@ int matrixCalculator()
         case 5:
         {
             printf("Returning Main menu...\n");
-            return 1;
+            return;
         }
         default:
             printf("\nIncorrect option! Please choose a number 1-4.");
