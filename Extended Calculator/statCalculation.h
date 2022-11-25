@@ -15,7 +15,7 @@ void mean()
     float sum;
     int i, n;
     float a[100];
-    printf("\nEnter the limit\n");
+    printf("\nEnter the limit: ");
     scanf("%d", &n);
     printf("Enter the set of numbers\n");
     for (i = 0; i < n; i++)
@@ -57,7 +57,7 @@ void median()
 {
     int i, n;
     float a[100];
-    printf("\nEnter the limit\n");
+    printf("\nEnter the limit: ");
     scanf("%d", &n);
     printf("Enter the set of numbers\n");
     for (i = 0; i < n; i++)
@@ -78,7 +78,7 @@ void mode()
     int i, j, sum = 0, n, t, k = 0, c = 1, max = 0, mode;
     float a[50] = {0.0}, b[50] = {0.0};
     float x = 0.0, y = 0.0;
-    printf("\nEnter the limit\n");
+    printf("\nEnter the limit: ");
     scanf("%d", &n);
     printf("Enter the set of numbers\n");
     for (i = 0; i < n; i++)
