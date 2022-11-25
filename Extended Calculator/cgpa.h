@@ -44,6 +44,10 @@ double totalgpa(struct s *s1)
 
 int cgpa()
 {
+    printf("\n\t\t------------------------------------------------\n");
+    printf("\t\t\t\tCGPA Calculator\n");
+    printf("\t\t------------------------------------------------\n");
+
     printf("Enter the number of subjects: ");
     scanf("%d", &n);
     struct s s1[n];
