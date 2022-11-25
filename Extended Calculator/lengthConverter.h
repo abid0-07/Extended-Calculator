@@ -9,7 +9,7 @@ void lengthMenu()
     printf("\t\t------------------------------------------------\n");
     printf("\t\t\tLength Menu\n");
     printf("\t\t------------------------------------------------\n");
-    printf("\t\t1. Kilometer to others\n\t\t2. Meter to others\n\t\t3. Mile to others\n\t\t4. Foot to others\n\t\t5. Exit to main menu\n");
+    printf("\t\t1. Kilometer to others\n\t\t2. Meter to others\n\t\t3. Mile to others\n\t\t4. Foot to others\n\t\t5. Exit to unit menu\n");
     printf("\t\t------------------------------------------------\n");
 }
 void kilometer(float km)
@@ -32,7 +32,7 @@ void meter(float m)
     printf("result in mile: %.4f\n", ml);
     printf("result in foot: %.4f\n", f);
 }
-void miler(float ml)
+void mile(float ml)
 {
 
     float km, m, f;
@@ -84,7 +84,7 @@ int length()
             float ml;
             printf("Enter value in mile: ");
             scanf("%f", &ml);
-            miler(ml);
+            mile(ml);
             break;
         }
         case 4:
