@@ -7,6 +7,9 @@
 void printRate();
 void electricityBill()
 {
+    printf("\n\t\t------------------------------------------------\n");
+    printf("\t\t\tElectricity Bill Calculator\n");
+    printf("\t\t------------------------------------------------\n");
     double unit, result;
     printf("Enter used UNIT(Only for home uses): ");
     scanf("%lf", &unit);
