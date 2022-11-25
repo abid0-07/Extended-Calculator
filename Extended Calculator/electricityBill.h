@@ -8,7 +8,7 @@ void printRate();
 void electricityBill()
 {
     double unit, result;
-    printf("Enter used UNIT: ");
+    printf("Enter used UNIT(Only for home uses): ");
     scanf("%lf", &unit);
     if (unit > 0.00 && unit <= 75.00)
     {
