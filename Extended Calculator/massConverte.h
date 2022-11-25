@@ -112,9 +112,7 @@ void massCalculation()
         break;
     }
     }
-
-
-    }
+}
 
 
 }
