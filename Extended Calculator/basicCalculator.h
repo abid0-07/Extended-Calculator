@@ -51,7 +51,7 @@ int basicCalculator()
         case 4:
         {
             float a, b;
-            printf("Enter two digits in order: ");
+            printf("Enter two digits in order(descending): ");
             scanf("%f %f", &a, &b);
             printf("Division is: %.4f", a / b);
             break;
@@ -69,7 +69,7 @@ int basicCalculator()
             float a, b;
             printf("Enter two digits: ");
             scanf("%f %f", &a, &b);
-            printf("Result is: %.4f", pow(a, b));
+            printf("Result of %.2f power %.2f is: %.4f",a,b, pow(a, b));
             break;
         }
         case 7:
@@ -83,7 +83,7 @@ int basicCalculator()
         case 8:
             {
                 printf("Returning to main menu");
-                return 1;
+                return;
             }
         default:
             printf("Invalid choice!!!");
