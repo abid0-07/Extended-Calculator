@@ -54,9 +54,9 @@ void massCalculation()
     while(1){
 
     printf("\t\t------------------------------------------------\n");
-    printf("\t\t|\tMass Converter Menu\t\t|\n");
+    printf("\t\t|\tMass Converter Menu\t\t\t|\n");
     printf("\t\t------------------------------------------------\n");
-    printf("\t\t1. Kilogram\n\t\t2. Gram\n\t\t3. Miligram\n\t\t4. Pound\n\t\t5. Exit to main menu\n");
+    printf("\t\t1. Kilogram\n\t\t2. Gram\n\t\t3. Miligram\n\t\t4. Pound\n\t\t5. Exit to unit menu\n");
     printf("\t\t------------------------------------------------\n");
     printf("\nEnter your choice: ");
     scanf("%d", &choice);
