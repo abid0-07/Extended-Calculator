@@ -24,7 +24,7 @@
 	"temperatureConverter.h"
 	"numberSystemConv.h"
 
-1669291916 f:\studies\semesters\semester 4\se 133 (software development capstone project)\project folder\extended calculator\cgpa.h
+1669385388 f:\studies\semesters\semester 4\se 133 (software development capstone project)\project folder\extended calculator\cgpa.h
 	<stdio.h>
 	<stdlib.h>
 	<math.h>
@@ -37,16 +37,16 @@
 1664113484 f:\studies\semesters\semester 4\se 133 (software development capstone project)\project folder\extended calculator\currencyconverter.h
 	<stdio.h>
 
-1668786071 f:\studies\semesters\semester 4\se 133 (software development capstone project)\project folder\extended calculator\electricitybill.h
+1669385581 f:\studies\semesters\semester 4\se 133 (software development capstone project)\project folder\extended calculator\electricitybill.h
 	<stdio.h>
 	<stdlib.h>
 
-1669371133 f:\studies\semesters\semester 4\se 133 (software development capstone project)\project folder\extended calculator\massconverte.h
+1669374039 f:\studies\semesters\semester 4\se 133 (software development capstone project)\project folder\extended calculator\massconverte.h
 	<stdio.h>
 	<math.h>
 	<stdlib.h>
 
-1669368267 f:\studies\semesters\semester 4\se 133 (software development capstone project)\project folder\extended calculator\statcalculation.h
+1669386559 f:\studies\semesters\semester 4\se 133 (software development capstone project)\project folder\extended calculator\statcalculation.h
 	<stdio.h>
 	<math.h>
 	<stdlib.h>
@@ -73,17 +73,17 @@
 	"lengthConverter.h"
 	"areaConverter.h"
 
-1669291312 f:\studies\semesters\semester 4\se 133 (software development capstone project)\project folder\extended calculator\lengthconverter.h
+1669372454 f:\studies\semesters\semester 4\se 133 (software development capstone project)\project folder\extended calculator\lengthconverter.h
 	<stdio.h>
 	<stdlib.h>
 	<math.h>
 
-1669290998 f:\studies\semesters\semester 4\se 133 (software development capstone project)\project folder\extended calculator\areaconverter.h
+1669371426 f:\studies\semesters\semester 4\se 133 (software development capstone project)\project folder\extended calculator\areaconverter.h
 	<stdio.h>
 	<stdlib.h>
 	<math.h>
 
-1669292134 f:\studies\semesters\semester 4\se 133 (software development capstone project)\project folder\extended calculator\matrixcalculator.h
+1669386222 f:\studies\semesters\semester 4\se 133 (software development capstone project)\project folder\extended calculator\matrixcalculator.h
 	<stdio.h>
 	<stdlib.h>
 
