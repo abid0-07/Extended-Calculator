@@ -99,7 +99,7 @@ int length()
         {
             printf("\n");
             return;
-            break;
+
         }
         default:
         {
