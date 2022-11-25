@@ -41,9 +41,6 @@
 		<Unit filename="cgpa.h">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
-		<Unit filename="currencyConverter.h">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
 		<Unit filename="electricityBill.h">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
