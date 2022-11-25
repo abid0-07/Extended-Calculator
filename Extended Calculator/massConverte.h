@@ -49,13 +49,16 @@ void pound(double x)
 }
 void massCalculation()
 {
+
+    int choice;
+    while(1){
+
     printf("\t\t------------------------------------------------\n");
     printf("\t\t|\tMass Converter Menu\t\t|\n");
     printf("\t\t------------------------------------------------\n");
     printf("\t\t1. Kilogram\n\t\t2. Gram\n\t\t3. Miligram\n\t\t4. Pound\n\t\t5. Exit to main menu\n");
     printf("\t\t------------------------------------------------\n");
-    int choice;
-    printf("Enter your choice: ");
+    printf("\nEnter your choice: ");
     scanf("%d", &choice);
     switch (choice)
     {
@@ -109,6 +112,11 @@ void massCalculation()
         break;
     }
     }
+
+
+    }
+
+
 }
 
 #endif // MASSCONVERTE_H_INCLUDED
