@@ -9,3 +9,9 @@ Bangla		3.00	3.00
 English		3.00	3.50
 math		3.00	3.50
 Total GPA: 3.33
+
+Subject Name	Credit	GPA
+Math		3.00	3.75
+Bangla		3.00	3.25
+English		3.00	3.50
+Total GPA: 3.50
