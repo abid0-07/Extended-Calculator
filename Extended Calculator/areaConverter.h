@@ -9,21 +9,21 @@ void menuArea()
     printf("\t\t------------------------------------------------\n");
     printf("\t\tArea Calculation Menu\n");
     printf("\t\t------------------------------------------------\n");
-    printf("\t\t1. Square meter to others\n\t\t2. Square Centimeter to others\n\t\t3. Square feet to others\n\t\t4. Square kilometer to others\n\t\t5. Exit to main menu\n");
+    printf("\t\t1. Square meter to others\n\t\t2. Square Centimeter to others\n\t\t3. Square feet to others\n\t\t4. Square kilometer to others\n\t\t5. Exit to unit menu\n");
     printf("\t\t------------------------------------------------\n");
 }
 void meterConverter()
 {
-    float meter;
+    double meter;
     printf("Enter value in meter square to convert: ");
     scanf("%f", &meter);
-    float centimeter, km, feet;
+    double centimeter, km, feet;
     centimeter = meter * 10000.00;
     km = meter / (1000 * 1000);
     feet = meter * 10.7639;
-    printf("Result in Centimeter Square: %.4f\n", centimeter);
-    printf("Result in Kilometer Square: %.4f\n", km);
-    printf("Result in Feet Square: %.4f\n", feet);
+    printf("Result in Centimeter Square: %.4lf\n", centimeter);
+    printf("Result in Kilometer Square: %.4lf\n", km);
+    printf("Result in Feet Square: %.4lf\n", feet);
 }
 void centimeterConverter()
 {
