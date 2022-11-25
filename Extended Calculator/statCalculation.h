@@ -137,6 +137,7 @@ int statCalculation()
         printf("\t\t------------------------------------------------\n");
 
         printf("Enter the choice: ");
+        fflush(stdin);
         scanf("%d", &choice);
         switch (choice)
         {
