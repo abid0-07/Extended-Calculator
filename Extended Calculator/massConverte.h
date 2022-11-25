@@ -39,7 +39,7 @@ void miligram(double x)
 void pound(double x)
 {
     double mg, kg, g;
-    kg = x / 2.205f;
+    kg = x / 2.205;
     g = x * 453.6;
     mg = x * 453600.0;
 
